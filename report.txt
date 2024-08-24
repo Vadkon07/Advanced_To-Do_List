@@ -1,1 +1,2 @@
-{'task': 'sdfbsgnffffffff', 'done': False, 'date': '2024-08-23 08:44', 'deadline': 'dddddddddddddd'} {'task': 'sssssssssssssss', 'done': False, 'date': '2024-08-23 08:44', 'deadline': 'eeeeeeeeeeee'}
+Task: Play games , Done , Date Created: 2024-08-24 13:51 , Deadline: September 10th
+Task: Puzzles , Not Done , Date Created: 2024-08-24 13:51 , Deadline: June 9th

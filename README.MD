@@ -33,10 +33,10 @@ python3 main.py
 1. **Improve User Interface:** [DONE]
 - Add color coding for task statuses (e.g., green for done, red for not done).
 - Include more descriptive prompts and error messages. 
-2. **Enhanced Task Management:**
+2. **Enhanced Task Management:** [DONE]
 - Allow users to edit task descriptions and deadlines.
 - Add priorities to tasks (high, medium, low) and enable sorting based on priority.
-3. **Data Storage Enhancements:**
+3. **Data Storage Enhancements:** [DONE]
 - Use a more structured data format (like JSON or CSV) for storing tasks instead of plain text, allowing for easier data manipulation and expansion.
 - Implement auto-saving of tasks after every action to prevent data loss in case of an unexpected exit.
 4. **Advanced Filtering and Sorting:**

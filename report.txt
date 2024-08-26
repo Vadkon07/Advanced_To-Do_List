@@ -1,2 +1,2 @@
-Task: Play games , Done , Date Created: 2024-08-24 13:51 , Deadline: September 10th
-Task: Puzzles , Not Done , Date Created: 2024-08-24 13:51 , Deadline: June 9th
+Play games , Done , 2024-08-26 21:23 , June 10th , Low
+Make friends , Not Done , 2024-08-26 21:23 , none , Medium

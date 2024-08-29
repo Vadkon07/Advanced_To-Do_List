@@ -193,6 +193,10 @@ def clearScreen():
     else:
         _ = system('clear')
 
+def clickToCont():
+    for i in range(1):
+        input("Press Enter to continue...")
+
 def main():
     global current_user
     current_user = None
@@ -246,6 +250,7 @@ def main():
             n_tasks = int(n_tasks)
 
             for i in range(n_tasks):
+                clearScreen();
                 print(f"Adding task number {i + 1} of {n_tasks}...")
                 task = input("Enter the task. If you want to stop adding more tasks, enter 'stop': ")
 
@@ -271,15 +276,18 @@ def main():
 
                 tasks.append({"task": task, "done": False, "date": date, "deadline": deadline, "priority": priority, "recurrence": recurrence})
                 print(f"Task '{task}' was added!")
+                clickToCont()
 
             save_tasks_to_file(get_user_file_name(current_user), tasks)  # Auto-save after adding tasks
 
         elif choice == '2':
             tasks = load_tasks_from_file(get_user_file_name(current_user))  # Load tasks each time to show the most updated list
             handle_recurring_tasks(tasks)  # Handle any recurring tasks
+            clearScreen();
             print("\n===== Tasks =====")
             if not tasks:
                 print("No tasks found. Enter '1' to add new task(s).")
+                clickToCont()
             else:
                 for index, task in enumerate(tasks):
                     status = "Done" if task["done"] else "Not Done"
@@ -288,6 +296,7 @@ def main():
                           f"Date of creation: {task['date']} . Deadline: {task['deadline']} . Priority: "
                           f"{PRIORITY_COLORS.get(task['priority'], '')}{task['priority']}{COLOR_RESET}, "
                           f"Recurrence: {task['recurrence']}")
+                    clickToCont()
 
         elif choice == '3':
             tasks = load_tasks_from_file(get_user_file_name(current_user))  # Load tasks from file to mark the correct task as done

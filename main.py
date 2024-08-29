@@ -1,5 +1,6 @@
 import datetime
 import os
+from os import system, name
 import json
 import copy
 import shutil
@@ -181,6 +182,17 @@ def user_login():
             json.dump([], file, indent=4)
     print(f"Logged in as {username}.")
 
+
+def clearScreen():
+
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')
+
 def main():
     global current_user
     current_user = None
@@ -188,7 +200,8 @@ def main():
     # MAIN MENU
     while True:
         if not current_user:
-            print("\n--- <<< To-Do List >>> ---")
+            clearScreen();
+            print("\n\033[92m--- <<< To-Do List >>> ---\033[0m")
             print("1. Login")
             print("2. Exit")
 
@@ -203,7 +216,8 @@ def main():
                 print("Invalid choice. Please try again.")
                 continue
 
-        print("\n--- <<< To-Do List >>> ---")
+        clearScreen();
+        print("\n\033[92m--- <<< To-Do List >>> ---\033[0m")
         print("1. Add Task(s)")
         print("2. Show Tasks")
         print("3. Mark Task as Done")
@@ -215,7 +229,7 @@ def main():
         print("9. Redo")
         print("10. Backup Tasks")
         print("11. Restore Tasks")
-        print("12. Logout")
+        print(f"12. Logout (current user is {current_user})")
         print("13. Exit")
 
         choice = input("Input your choice: ")

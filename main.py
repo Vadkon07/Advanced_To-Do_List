@@ -4,7 +4,6 @@ import json
 import copy
 import shutil
 import re
-import sys
 
 # ANSI escape sequences for color
 COLOR_GREEN = '\033[92m'  # Green text

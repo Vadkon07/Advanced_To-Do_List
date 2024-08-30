@@ -39,21 +39,21 @@ python3 main.py
 3. **Data Storage Enhancements:** [DONE]
 - Use a more structured data format (like JSON or CSV) for storing tasks instead of plain text, allowing for easier data manipulation and expansion.
 - Implement auto-saving of tasks after every action to prevent data loss in case of an unexpected exit.
-4. **Advanced Filtering and Sorting:**
+4. **Advanced Filtering and Sorting:** 
 - Add options to filter tasks by status (done/not done), deadline, or priority.
 - Enable sorting tasks by creation date, deadline, or priority.
-5. **Recurring Tasks:**
+5. **Recurring Tasks:** [DONE]
 - Add functionality to handle recurring tasks (e.g., daily, weekly).
-6. **Undo/Redo Feature:**
+6. **Undo/Redo Feature:** [DONE]
 - Implement an undo/redo feature to allow users to revert actions easily.
 7. **Graphical User Interface (GUI):**
 - Develop a GUI version using libraries such as Tkinter or PyQt for better user interaction.
-8. **Testing and Error Handling:**
+8. **Testing and Error Handling:** [DONE]
 - Add unit tests to ensure program reliability and correctness.
 - Improve error handling for user inputs and file operations.
-9. **Multi-User Support:**
+9. **Multi-User Support:** [DONE]
 - Implement support for multiple users, allowing each user to have their own separate task list.
-10. **Backup and Restore Functionality:**
+10. **Backup and Restore Functionality:** [DONE]
 - Add functionality to back up the tasks to a different file and restore from backups in case of data corruption or accidental deletions.
 ## Contributions
 Contributions are welcome! If you have any suggestions, please open an issue or submit a pull request.
